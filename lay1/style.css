@@ -25,18 +25,22 @@ section {
 header {
      background-color: red;
      margin-bottom: 10px;
+     display: flex;
+     height: 50px;
+     overflow: hidden;
 }
 
 header nav {
      background-color: orange;
+     width: 80%;
      display: flex;
-     justify-content: center;
-     
+     justify-content: end;
 }
+
 
 header ul  {
      background-color: yellow;
-     padding: 5px 20px;
+     padding: 0 5px;
      height: 50px;
      display: flex;
      align-items: center;
@@ -48,6 +52,12 @@ header li{
      background-color: aqua;
      font-size: 1.1em;
      padding: 5px;
+     margin: auto;
+     
+}
+
+header > img {
+     flex: 1;
 }
 
 header a {
@@ -67,7 +77,9 @@ main {
 
  /* -- SOBRE MIM -- */
 section#sobreMim {
-     background-color: lightcoral;
+     background-color: rgb(223, 189, 35);
+     display: flex;
+     flex-wrap: wrap-reverse;
 }
 
 #sobreMim article {
@@ -85,8 +97,8 @@ section#sobreMim {
 
 #sobreMim picture {
      background-color: palevioletred;
-     width: 60%;
      height: 200px;
+     width: 300px;
      margin: auto;
      display: flex;
      justify-content: center;
@@ -94,7 +106,6 @@ section#sobreMim {
 }
 
 #sobreMim picture > img {
-     object-fit: cover;
      height: 100%;
      width: 100%;
 }
@@ -149,6 +160,7 @@ footer {
      display: flex;
      flex-direction: column;
      padding: 20px;
+     
 }
 
 #creditos {
