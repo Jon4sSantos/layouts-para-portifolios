@@ -103,8 +103,7 @@ section#sobreMim {
 
 #sobreMim article {
      background-color: antiquewhite;
-     width: 300px;
-     height: 200px;
+     width:250px;
 }
 
 #sobreMim article h2 {
@@ -118,8 +117,7 @@ section#sobreMim {
 
 #sobreMim picture {
      background-color: palevioletred;
-     height: 200px;
-     width: 300px;
+     flex: 1;
      margin: auto;
      border-radius: 50%;
      display: flex;
