@@ -30,35 +30,55 @@ header {
      overflow: hidden;
 }
 
+#barras {
+     background-color: blueviolet;
+     flex: 1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0 5px;
+     cursor: pointer;
+}
+
+#barras > i{
+     font-size: 2em;
+}
+
 header nav {
      background-color: orange;
      width: 80%;
      display: flex;
-     justify-content: end;
+     justify-content: center;
+     align-items: center;
 }
 
 
 header ul  {
+     display: none;
+}
+
+/* header ul  {
      background-color: yellow;
      padding: 0 5px;
      height: 50px;
+     flex: 1;
      display: flex;
      align-items: center;
      list-style-type: none;
      gap: 20px;
-}
+} */
 
 header li{
+     display: none;
+}
+
+/* header li{
      background-color: aqua;
      font-size: 1.1em;
      padding: 5px;
      margin: auto;
      
-}
-
-header > img {
-     flex: 1;
-}
+} */
 
 header a {
      text-decoration: none;
@@ -79,11 +99,12 @@ main {
 section#sobreMim {
      background-color: rgb(223, 189, 35);
      display: flex;
-     flex-wrap: wrap-reverse;
 }
 
 #sobreMim article {
      background-color: antiquewhite;
+     width: 300px;
+     height: 200px;
 }
 
 #sobreMim article h2 {
@@ -100,12 +121,13 @@ section#sobreMim {
      height: 200px;
      width: 300px;
      margin: auto;
+     border-radius: 50%;
      display: flex;
-     justify-content: center;
-     
+     justify-content: center;    
 }
 
 #sobreMim picture > img {
+     border-radius: 50%;
      height: 100%;
      width: 100%;
 }
