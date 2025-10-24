@@ -4,7 +4,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     outline: 2px solid black;
+
 }
 
 /* GERAIS */
@@ -24,6 +24,7 @@ section {
 /* HEADER */
 header {
      background-color: red;
+     margin-bottom: 10px;
 }
 
 header nav {
@@ -36,13 +37,20 @@ header nav {
 header ul  {
      background-color: yellow;
      padding: 5px 20px;
+     height: 50px;
      display: flex;
+     align-items: center;
      list-style-type: none;
      gap: 20px;
 }
 
-header li {
+header li{
      background-color: aqua;
+     font-size: 1.1em;
+     padding: 5px;
+}
+
+header a {
      text-decoration: none;
 }
 
@@ -51,6 +59,7 @@ main {
      background-color: red;
      width: 90%;
      margin: auto;
+     border-radius: 5px;
      display: flex;
      flex-direction: column;
      gap: 30px;
