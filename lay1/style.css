@@ -26,13 +26,12 @@ section {
 /* HEADER */
 header {
      background-color: red;
-     margin-bottom: 10px;
      display: flex;
      height: 50px;
      overflow: hidden;
 }
 
-#barras {
+#botaomenu {
      background-color: blueviolet;
      flex: 1;
      display: flex;
@@ -42,7 +41,7 @@ header {
      cursor: pointer;
 }
 
-#barras > i{
+#botaomenu > i{
      font-size: 2em;
 }
 
@@ -90,8 +89,9 @@ header a {
 main {
      background-color: red;
      width: 90%;
-     margin: auto;
+     margin: 10px auto;
      border-radius: 5px;
+     overflow: hidden;
      display: flex;
      flex-direction: column;
 }
@@ -135,31 +135,58 @@ section#sobreMim {
 
 /* HABILIDADES */
 section#habilidades {
-     height: 400px;
+     height: 250px;
      background-color: red;
+     position: relative;
+}
+
+section#habilidades > h2 {
+     padding: 10px;
+     text-align: center;
 }
 
 #linguagens {
      background-color: aquamarine;
-     
-     
+     display: flex;
+     flex-flow: column nowrap;
+     gap: 6px;     
 }
+
 
 .linguagem {
      border-left: 5px solid blue;
      border-radius: 10px;
      height: 45px;
-     padding: 10px;
+     padding: 0 10px;
      display: flex;
      align-items: center;
      gap: 20px;
      background-color: burlywood;
 }
 
+.nomeEicone {
+     height: 100%;
+     width: 40%;
+}
+
+.nomeEicone p {
+     height: 100%;
+     display: flex;
+     align-items: center;
+     gap: 10px;
+}
+
+
+.nomeEicone img {
+    height: 100%;
+    width: 35px;
+    padding: 5px 0;
+}
+
 .barra {
      background-color: blue;
      height: 5px;
-     border-radius: 5px;
+     border-radius: 10px;
      flex: 1;
 }
 
@@ -167,9 +194,13 @@ section#habilidades {
      background-color: aliceblue;
      width: 80%;
      height: 100%;
-     border-radius: 5px;
+     border-radius: 10px;
 }
 
+#msg {
+     position: absolute;
+     bottom: 0px;
+}
 
 /* -- PROJETOS -- */
 section#meusProjetos {
@@ -180,14 +211,14 @@ section#meusProjetos {
 }
 
 #meusProjetos h2 {
-     padding: 5px;
+     padding: 10px;
      text-align: center;
-     margin-bottom: -10px;
+     margin-bottom: -20px;
 }
 
 #slider {
      height: 200px;
-    overflow: hidden;
+     overflow: hidden;
 }
 
 #slides {
