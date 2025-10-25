@@ -99,22 +99,31 @@ main {
  /* -- SOBRE MIM -- */
 section#sobreMim {
      background-color: rgb(223, 189, 35);
+     height: 220px;
      display: flex;
 }
 
 #sobreMim article {
      background-color: antiquewhite;
      flex: 1;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
 }
 
 #sobreMim article h2 {
      font-size: 1.2em;
      padding: 5px;
      text-align: center;
+     position: absolute;
+     top: 10px;
+     left: 15%;
 }
 
 #sobreMim article p {
      padding: 5px;
+     text-align: center;
 }
 
 #sobreMim picture {
@@ -135,7 +144,7 @@ section#sobreMim {
 
 /* HABILIDADES */
 section#habilidades {
-     height: 250px;
+     height: 320px;
      background-color: red;
      position: relative;
 }
@@ -156,7 +165,7 @@ section#habilidades > h2 {
 .linguagem {
      border-left: 5px solid blue;
      border-radius: 10px;
-     height: 45px;
+     height: 60px;
      padding: 0 10px;
      display: flex;
      align-items: center;
@@ -180,7 +189,7 @@ section#habilidades > h2 {
 .nomeEicone img {
     height: 100%;
     width: 35px;
-    padding: 5px 0;
+    padding: 12px 0;
 }
 
 .barra {
@@ -199,7 +208,7 @@ section#habilidades > h2 {
 
 #msg {
      position: absolute;
-     bottom: 0px;
+     bottom: 10px;
 }
 
 /* -- PROJETOS -- */
