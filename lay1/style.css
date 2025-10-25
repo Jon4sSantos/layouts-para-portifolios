@@ -6,7 +6,6 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     outline: 2px solid purple;
 }
 
 /* GERAIS */
@@ -134,8 +133,45 @@ section#sobreMim {
      width: 100%;
 }
 
-/* -- PROJETOS -- */
+/* HABILIDADES */
+section#habilidades {
+     height: 400px;
+     background-color: red;
+}
 
+#linguagens {
+     background-color: aquamarine;
+     
+     
+}
+
+.linguagem {
+     border-left: 5px solid blue;
+     border-radius: 10px;
+     height: 45px;
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     background-color: burlywood;
+}
+
+.barra {
+     background-color: blue;
+     height: 5px;
+     border-radius: 5px;
+     flex: 1;
+}
+
+.progresso {
+     background-color: aliceblue;
+     width: 80%;
+     height: 100%;
+     border-radius: 5px;
+}
+
+
+/* -- PROJETOS -- */
 section#meusProjetos {
      background-color: rgb(0, 111, 148);
      display: flex;
