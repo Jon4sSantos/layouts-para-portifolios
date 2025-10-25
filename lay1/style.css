@@ -201,9 +201,20 @@ section#habilidades > h2 {
 
 .progresso {
      background-color: aliceblue;
-     width: 80%;
      height: 100%;
      border-radius: 10px;
+}
+
+#html .progresso {
+     width: 80%;
+}
+
+#css .progresso {
+     width: 85%;
+}
+
+#javascript .progresso {
+     width: 0%;
 }
 
 #msg {
