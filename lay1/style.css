@@ -6,6 +6,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
+     outline: 2px solid purple;
 }
 
 /* GERAIS */
@@ -149,12 +150,13 @@ section#meusProjetos {
 }
 
 #slider {
-     border: 4px solid black;
      height: 200px;
-     overflow: hidden;
+    overflow: hidden;
 }
+
 #slides {
-     height: 100%;
+     background-color: aqua;
+     height: 200px;
      width: 200%;
      display: flex;
 }
@@ -173,15 +175,14 @@ section#meusProjetos {
 }
 
 #manual-navigation {
-     position: absolute;
-     width: 89%;
+     width: 100%;
      margin-top: -40px;
      display: flex;
      justify-content: center;
-     gap: 10px;
+     gap: 15px;
 }
 
-.botao {
+.manual-btn {
      border: 2px solid white;
      padding: 5px;
      border-radius: 10px;
@@ -189,10 +190,19 @@ section#meusProjetos {
      transition: 0.5s;
 }
 
-.botao:hover {
+.manual-btn:hover {
      background-color: white;
 }
 
+#radio1:checked ~ .first {
+     margin-left: 0;
+     transition: 1s;
+}
+
+#radio2:checked ~ .first {
+     margin-left: -50%;
+     transition: 1s;
+}
 
 .projeto {
      background-color: darkolivegreen;
